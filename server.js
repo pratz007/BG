@@ -26,12 +26,12 @@ var myFirstServer = http.createServer(handleRequest);
 
 dispatcher.onGet("/", function(req, res) {
     res.writeHead(200, {'Content-Type': 'text/html'});
-    res.end('<h1>Hey, this is the homepage of your Blue server2</h1>');
+    res.end('<h1>Hey, this is the homepage of your Updated Server</h1>');
 });
 
 dispatcher.onGet("/welcome", function(req, res) {
     res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.end('Welcome homepage for Blue2');
+    res.end('Welcome homepage for Updated Server');
 });
 
 dispatcher.onError(function(req, res) {
@@ -42,6 +42,6 @@ dispatcher.onError(function(req, res) {
 
 myFirstServer.listen(PORT, function(){
 
-    console.log("Blue listening on: http://localhost:%s", PORT);
+    console.log("Update Server listening on: http://localhost:%s", PORT);
 });
 
