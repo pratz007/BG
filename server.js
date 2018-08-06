@@ -26,7 +26,7 @@ var myFirstServer = http.createServer(handleRequest);
 
 dispatcher.onGet("/", function(req, res) {
     res.writeHead(200, {'Content-Type': 'text/html'});
-    res.end('<h1>Hey, this is the homepage of your Updated Server34</h1>');
+    res.end('<h1>Hey, this is the homepage of your Updated Server4</h1>');
 });
 
 dispatcher.onGet("/welcome", function(req, res) {
