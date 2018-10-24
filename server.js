@@ -1,6 +1,6 @@
 #!/usr/bin/env nodejs
 var http = require('http');
-var httpdispatcher = require ('httpdispatcher');
+var httpdispatcher = require ('http-dispatcher');
 var dispatcher = new httpdispatcher();
 require('dotnenv').config();
 
