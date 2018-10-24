@@ -1,10 +1,10 @@
 #!/usr/bin/env nodejs
 var http = require('http');
-var httpdispatcher = require ('http-dispatcher');
+var httpdispatcher = require ('httpdispatcher');
 var dispatcher = new httpdispatcher();
-require('dotnenv').config();
+require('dotenv').config();
 
-const PORT = 8080;
+const PORT = 5000;
 
 //THis is a comment maaaaannnn
 // THIS IS A SECOND COMMENT
@@ -22,7 +22,8 @@ function handleRequest(request, response){
 var myFirstServer = http.createServer(handleRequest);
 dispatcher.onGet("/", function(req, res) {
     res.writeHead(200, {'Content-Type': 'text/html'});
-    res.end('<h1>Hello </h1>'+process.env.NAME);
+    res.end('<h1>Hello </h1>'+process.env.Name);
+    console.log("HERROOO "+process.env.Name)
 });
 
 dispatcher.onGet("/welcome", function(req, res) {
