@@ -3,7 +3,7 @@ var http = require('http');
 var httpdispatcher = require ('httpdispatcher');
 var dispatcher = new httpdispatcher();
 require('dotenv').config();
-
+const name=process.env.Name
 const PORT = 5000;
 
 //THis is a comment maaaaannnn
@@ -22,8 +22,8 @@ function handleRequest(request, response){
 var myFirstServer = http.createServer(handleRequest);
 dispatcher.onGet("/", function(req, res) {
     res.writeHead(200, {'Content-Type': 'text/html'});
-    res.end('<h1>Hello </h1>'+process.env.Name);
-    console.log("HERROOO "+process.env.Name)
+    res.end('<h1>Hello </h1>'+name);
+    console.log("HERROOO "+name)
 });
 
 dispatcher.onGet("/welcome", function(req, res) {
