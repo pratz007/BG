@@ -24,6 +24,7 @@ dispatcher.onGet("/", function(req, res) {
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.end('<h1>Hello </h1>'+name);
     console.log("HERROOO "+name)
+    console.log ("TEST3")
 });
 
 dispatcher.onGet("/welcome", function(req, res) {
