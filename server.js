@@ -6,8 +6,6 @@ require('dotenv').config();
 const name=process.env.Name
 const PORT = 5000;
 
-//THis is a comment maaaaannnn
-// THIS IS A SECOND COMMENT
 function handleRequest(request, response){
     try {
         
@@ -22,9 +20,9 @@ function handleRequest(request, response){
 var myFirstServer = http.createServer(handleRequest);
 dispatcher.onGet("/", function(req, res) {
     res.writeHead(200, {'Content-Type': 'text/html'});
-    res.end('<h1>Hello </h1>'+name);
+    res.end('<h1>Hello PRATEEK </h1>'+name);
     console.log("HERROOO "+name)
-    console.log ("TEST3")
+    console.log ("TEST")
 });
 
 dispatcher.onGet("/welcome", function(req, res) {
