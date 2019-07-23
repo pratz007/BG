@@ -1,1 +1,1 @@
-# Simple node js Webserver used for blue green deployment
+# Simple Node js Webserver used for blue green deployment

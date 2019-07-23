@@ -27,12 +27,12 @@ dispatcher.onGet("/", function(req, res) {
 
 dispatcher.onGet("/welcome", function(req, res) {
     res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.end('Welcome homepage for Updated Server ---- TEST COMMIT #20);
+    res.end('Welcome homepage for Updated Server ---- TEST COMMIT #21);
 });
 
 dispatcher.onError(function(req, res) {
     res.writeHead(404);
-    res.end("Error, the URL doesn't exist + TEST 5");
+    res.end("Error, the URL doesn't exist + TEST 51");
 });
 
 
