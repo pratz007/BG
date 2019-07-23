@@ -32,7 +32,7 @@ dispatcher.onGet("/welcome", function(req, res) {
 
 dispatcher.onError(function(req, res) {
     res.writeHead(404);
-    res.end("Error, the URL doesn't exist + TEST 5");
+    res.end("Error, the URL doesn't exist + TEST 51");
 });
 
 
