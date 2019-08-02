@@ -27,7 +27,7 @@ dispatcher.onGet("/", function(req, res) {
 
 dispatcher.onGet("/welcome", function(req, res) {
     res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.end('Welcome homepage for Updated Server ---- TAG COMMIT #3');
+    res.end('Welcome homepage for Updated Server ---- TAG COMMIT #4');
 });
 
 dispatcher.onError(function(req, res) {
